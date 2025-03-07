@@ -2,7 +2,7 @@
 
 pause the execution of a function, go back to a point, do some other stuff, resume the function
 
-# example
+## example
 ```odin
 // force inline is a MUST
 testfn :: #force_inline proc(rew: ^Repo) {
@@ -38,3 +38,6 @@ unpaused
 done with it
 */
 ```
+
+## implementation details 
+abuse of libc.longjmp and libc.setjmp
