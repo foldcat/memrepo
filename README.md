@@ -1,6 +1,7 @@
 # memrepo
 
-pause the execution of a function, go back to a point, do some other stuff, resume the function
+pause the execution of a procedure, go back to a point, 
+do some other stuff, resume the procedure
 
 ## example
 ```odin
@@ -38,6 +39,13 @@ unpaused
 done with it
 */
 ```
+
+## usecase 
+in a scheduler, when an operation is blocking, pause procedure, 
+allow other task to run, resume procedure when unblocked
+
+## should I use this 
+no
 
 ## implementation details 
 abuse of libc.longjmp and libc.setjmp
